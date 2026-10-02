@@ -1,0 +1,56 @@
+{
+  "chainId": 11155111,
+  "poolKey": {
+    "fee": 12500,
+    "hooks": "0x1b7dae02cbe9ccd80ae77e1f51884a324f006000",
+    "currency0": "0x0000000000000000000000000000000000000000",
+    "currency1": "0x616f48333ea49a9f99c3f7f950389b692312e49d",
+    "tickSpacing": 60
+  },
+  "repoUrl": "https://github.com/identity-md-launches/launch-616-workflow-contract-stage-context",
+  "version": 1,
+  "launchId": "c86dc115-5374-48bb-b2b2-08708a658636",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Swarm Spark: an unofficial, community-run 14-day hackathon registry (Sepolia, chain ID 11155111). Token: LaunchToken in src/LaunchToken.sol, ERC-20 'Swarm Hackathon Token' (HACK), 18 decimals, fixed supply of 1,000,000,000 HACK (10^27 minor units) minted to msg.sender (the factory) in a nonpayable constructor with no arguments; no mint, burn, owner, pause, blocklist, fee or upgrade functions. HACK plays no role in hackathon entry, judging or prizes. Application contract: HackathonRegistry in src/HackathonRegistry.sol, nonpayable constructor with zero arguments; it sets an immutable deadline = block.timestamp + 14 days at deployment and emits RegistryOpened(deadline). It has no owner, admin, initialization call, deadline setter, proxy, external call, token dependency or ETH handling; it holds no funds. Anyone except the constant prize-wallet address 0x9e134c3dedDb698B81C9E1581925766b62d26400 (an eligibility exclusion only, not a privileged role) registers one entry per address (project name up to 64 bytes, repository and demo URLs up to 200 bytes each, nonzero toolkit bitmask over bits 0-18), may update it before the deadline and may withdraw it permanently at any time; entries are enumerable by id (1..entryCount) and every change emits an event. No $owner, $token or $contract reference is used because neither constructor takes arguments; the factory is msg.sender for both constructors and receives the full token supply, which the registry never touches. Pool: paired with native ETH (zero address), manifest fee 3000 and tickSpacing 60 for admission, initialPrice as sqrtPriceX96 1:1; the pinned launch policy derives the effective opening price and the pool trades at the network LaunchFees rate rather than the manifest fee. The factory supplies PoolInitializationGuard and MerkleDistributor; neither is implemented or listed here. Supply split, allocations, ownership, chain, policy version and artifact hashes belong to launch policy and services, not to this manifest. Prizes are paid off-chain by the organiser on Ethereum mainnet after AI-agent judging; the contracts hold and move no prize assets. Tests: forge test (unit, fuzz, invariant, deployment, runtime-size/opcode checks); ABI exports at docs/abi/LaunchToken.json and docs/abi/HackathonRegistry.json.",
+    "token": {
+      "name": "Swarm Hackathon Token",
+      "symbol": "HACK",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "HackathonRegistry",
+        "constructorArgs": []
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x05163e7ec8e7bdf6de8e797d0f6bb8ac6b1b382230395f83fac28cbe2789eca9",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0x616f48333ea49a9f99c3f7f950389b692312e49d",
+      "blockNumber": 11830872,
+      "creationCodeHash": "46e4d12e2e2477967914ec0b6eb8f478bc0042821a4ddbb3c5599ea730d2e8c0"
+    },
+    {
+      "name": "HackathonRegistry",
+      "txHash": "0x05163e7ec8e7bdf6de8e797d0f6bb8ac6b1b382230395f83fac28cbe2789eca9",
+      "abiHash": "026d0be5b6a660fb5e233874455fbd5f9d09ee4a9234caffd0757ea02bb2c7ca",
+      "address": "0x8bbd2a040d5e610594da7d92b66c2b7de6a0f419",
+      "blockNumber": 11830872,
+      "creationCodeHash": "e01dfc45a7de2723a6b30003acae9f947d22d748600e3af0bc2d9bb81236d21e"
+    }
+  ],
+  "sourceCommit": "8f503e6c3411f01581b55d28d715c4b8ef0a79a1",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "078de7929dd92a1612adb901f973ffd383b347a00ab2a223ae6886a3eed1c25c"
+}

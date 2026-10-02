@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-02T19:23:53.804Z",
+  "productionSubpath": "/preview/",
+  "live": {
+    "rpc": "pass",
+    "status": "Read at block 11831036 · 0 historical entries\nRefreshes every 30 seconds",
+    "deadline": "Closes Oct 16, 2026, 6:50 PM UTC",
+    "axe": [],
+    "consoleErrors": [],
+    "requestFailures": [],
+    "contrast": [
+      {
+        "selector": "body",
+        "foreground": "rgb(33, 37, 30)",
+        "background": "rgb(246, 245, 238)",
+        "ratio": 14.25
+      },
+      {
+        "selector": ".experiment-banner p",
+        "foreground": "rgb(92, 98, 83)",
+        "background": "rgb(238, 238, 229)",
+        "ratio": 5.41
+      },
+      {
+        "selector": ".muted",
+        "foreground": "rgb(92, 98, 83)",
+        "background": "rgb(255, 254, 249)",
+        "ratio": 6.25
+      },
+      {
+        "selector": ".button.primary",
+        "foreground": "rgb(33, 37, 30)",
+        "background": "rgb(223, 239, 107)",
+        "ratio": 12.39
+      },
+      {
+        "selector": ".deadline",
+        "foreground": "rgb(211, 213, 200)",
+        "background": "rgb(33, 37, 30)",
+        "ratio": 10.48
+      },
+      {
+        "selector": ".badge.inverse",
+        "foreground": "rgb(223, 239, 107)",
+        "background": "rgb(33, 37, 30)",
+        "ratio": 12.39
+      },
+      {
+        "selector": ".tool-state",
+        "foreground": "rgb(92, 98, 83)",
+        "background": "rgb(255, 254, 249)",
+        "ratio": 6.25
+      },
+      {
+        "selector": ".error",
+        "foreground": "rgb(162, 48, 34)",
+        "background": "rgb(255, 240, 233)",
+        "ratio": 6.34
+      },
+      {
+        "selector": ".footer-bottom",
+        "foreground": "rgb(211, 213, 200)",
+        "background": "rgb(33, 37, 30)",
+        "ratio": 10.48
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "Keyboard skip link and main focus",
+      "result": "pass"
+    },
+    {
+      "name": "Hash navigation, toolkit filtering, empty state and reset",
+      "result": "pass"
+    },
+    {
+      "name": "FAQ disclosure",
+      "result": "pass"
+    },
+    {
+      "name": "Missing wallet recovery",
+      "result": "pass"
+    },
+    {
+      "name": "No horizontal overflow at 1440px",
+      "result": "pass"
+    },
+    {
+      "name": "No horizontal overflow at 800px",
+      "result": "pass"
+    },
+    {
+      "name": "No horizontal overflow at 390px",
+      "result": "pass"
+    },
+    {
+      "name": "No horizontal overflow at 320px",
+      "result": "pass"
+    },
+    {
+      "name": "Reduced motion disables button transitions",
+      "result": "pass"
+    },
+    {
+      "name": "200% root text enlargement reflow (not native browser zoom)",
+      "result": "pass"
+    },
+    {
+      "name": "Wallet connection rejection is recoverable",
+      "result": "pass"
+    },
+    {
+      "name": "Wrong-chain guard and wallet switch",
+      "result": "pass"
+    },
+    {
+      "name": "Required fields, UTF-8 byte limits, unsafe URL and toolkit validation",
+      "result": "pass"
+    },
+    {
+      "name": "Transaction rejection retains form and permits retry",
+      "result": "pass"
+    },
+    {
+      "name": "Registration: deployed target, correct ABI, zero ETH, receipt and list refresh",
+      "result": "pass"
+    },
+    {
+      "name": "Own-entry edit updates metadata and refreshes list",
+      "result": "pass"
+    },
+    {
+      "name": "Reverted receipt never reports a successful change",
+      "result": "pass"
+    },
+    {
+      "name": "Withdrawal dialog: initial focus, Escape, focus return",
+      "result": "pass"
+    },
+    {
+      "name": "Exact deadline closes editing while withdrawal remains available",
+      "result": "pass"
+    },
+    {
+      "name": "Permanent withdrawal is confirmed and cannot be registered again",
+      "result": "pass"
+    },
+    {
+      "name": "Account changes clear previous ownership and form",
+      "result": "pass"
+    },
+    {
+      "name": "Chain change events immediately disable actions",
+      "result": "pass"
+    },
+    {
+      "name": "Local wallet disconnect",
+      "result": "pass"
+    },
+    {
+      "name": "Historical entries, status/search filters, pagination and hostile metadata",
+      "result": "pass"
+    },
+    {
+      "name": "Supplied organiser wallet cannot register",
+      "result": "pass"
+    },
+    {
+      "name": "Fail-closed code validation",
+      "result": "pass"
+    },
+    {
+      "name": "Fail-closed chain validation",
+      "result": "pass"
+    },
+    {
+      "name": "Fail-closed rpc validation and retry recovery",
+      "result": "pass"
+    },
+    {
+      "name": "Fail-closed abi validation",
+      "result": "pass"
+    },
+    {
+      "name": "Axe WCAG A/AA scan: zero detected violations",
+      "result": "pass"
+    },
+    {
+      "name": "Live production browser: no console errors or failed requests",
+      "result": "pass"
+    }
+  ],
+  "screenshots": [
+    "desktop.jpg",
+    "keyboard-focus.jpg",
+    "viewport-800.jpg",
+    "viewport-390.jpg",
+    "mobile-form.jpg",
+    "viewport-320.jpg",
+    "withdraw-dialog.jpg"
+  ],
+  "limitations": [
+    "Wallet transactions are simulated; no funded wallet, signing extension or real transaction was used.",
+    "No native screen reader, physical mobile device, Safari, Firefox or browser-native zoom session."
+  ],
+  "result": "pass"
+}

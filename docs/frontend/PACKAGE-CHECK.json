@@ -1,0 +1,19 @@
+{
+  "result": "pass",
+  "exportBytes": 559067,
+  "exportAssetCountExcludingManifest": 7,
+  "largestExportFileBytes": 491530,
+  "allowedNewPathPrefixes": [
+    "web/",
+    "dist/",
+    "docs/"
+  ],
+  "explicitIgnoreAllowance": "web/.gitignore",
+  "modifiedExistingTrackedFiles": [],
+  "newFilesOutsideAllowedPaths": [],
+  "submittedDependencyDirectoriesOrArchives": [],
+  "gitSubmodules": [],
+  "fullCandidateGitBundleWithin8388608Bytes": true,
+  "bundleMethod": "Created a temporary clone under /tmp, copied all nonignored candidate files, committed locally, bounded the temporary clone history at the pinned source because older source-history objects are absent, bundled --all including this report, asserted bundle size <= 8388608. Temporary bundle is not submitted.",
+  "rootDesignPathException": "Design documentation at web/DESIGN.md to obey the explicit permitted paths."
+}
